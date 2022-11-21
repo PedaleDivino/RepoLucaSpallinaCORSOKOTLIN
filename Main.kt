@@ -1,66 +1,30 @@
-import java.util.*
 fun main(args: Array<String>) {
-    println("ora ci sarà un IF")
-    println("inserisci un numero")
-    var a = readLine()!!.toInt()
-    var b = 1
-    //val Lettore = Scanner(System.in);
-    if (a > b){
-        println(a)
-    }
-    else {
-        println("hai rotto il codice")
-    }
+    println("scegli tra:")
+    println("Mazda")
+    println("Toyota")
+    println("Nissan")
+    println("Honda")
+    println("")
 
-    if  (a == 100) {
+    val IDAuto = readLine()!!.toString()
 
-    }
-    else if (a in 90 .. 99){
-        if (a in 95 .. 99) {
+    when(IDAuto){
+        "Mazda" -> {
+            println("hai scelto RX-7")
+        }
 
-            println("A")
+        "Toyota" -> {
+            println("hai scelto Supra")
+        }
 
-        } else if (a in 90 .. 94){
+        "Nissan" -> {
+            println("hai scelto R33")
+        }
 
-            println("A-")
-
+        "Honda" -> {
+            println("hai scelto S2000")
         }
     }
 
-    else if (a in 80 .. 89){
-        if (a in 85 .. 89) {
 
-            println("B")
-
-        } else if (a in 80 .. 84){
-
-            println("B-")
-
-        }
-    }
-    else if (a in 70 .. 79){
-        if (a in 75 .. 79) {
-
-            println("C")
-
-        } else if (a in 70 .. 74){
-
-            println("C-")
-
-        }
-    }
-    else if (a in 60 .. 69){
-        if (a in 65 .. 69) {
-
-            println("D")
-
-        } else if (a in 60 .. 64){
-
-            println("D-")
-
-        }
-    }
-    else if (a in 50 .. 59){
-        print("non sufficiente")
-    }
 }
